@@ -1,0 +1,14 @@
+--- dyninst-10.2.0/testsuite-10.1.0/src/test_lib.h
++++ dyninst-10.2.0/testsuite-10.1.0/src/test_lib.h
+@@ -158,3 +158,3 @@
+ 
+-	TESTLIB_DLL_EXPORT virtual ~LocErr() THROW; 
++	TESTLIB_DLL_EXPORT virtual ~LocErr() throw(); 
+ 
+--- dyninst-10.2.0/testsuite-10.1.0/src/test_lib.C
++++ dyninst-10.2.0/testsuite-10.1.0/src/test_lib.C
+@@ -112,3 +112,3 @@
+ 
+-LocErr::~LocErr() THROW
++LocErr::~LocErr() throw()
+ {}

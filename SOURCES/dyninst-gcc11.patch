@@ -1,0 +1,13 @@
+diff --git a/testsuite-10.1.0/src/dyninst/test1_3.C b/testsuite-10.1.0/src/dyninst/test1_3.C
+index d32f630..b9bd0ba 100644
+--- a/testsuite-10.1.0/src/dyninst/test1_3.C
++++ b/testsuite-10.1.0/src/dyninst/test1_3.C
+@@ -134,7 +134,7 @@ test_results_t test1_3_Mutator::executeTest()
+ 	}
+ 
+ 	// see if we can find the address
+-	if (expr3_1->getBaseAddr() <= 0) 
++	if (expr3_1->getBaseAddr() == 0)
+ 	{
+ 		logerror("*Error*: address %p for %s is not valid\n",
+ 				expr3_1->getBaseAddr(), globalVar);

@@ -1,0 +1,11 @@
+--- dyninst-10.2.1/dyninst-10.2.1/cmake/ThreadingBuildingBlocks.cmake.orig	2019-05-16 14:40:05.000000000 -0400
++++ dyninst-10.2.1/dyninst-10.2.1/cmake/ThreadingBuildingBlocks.cmake	2019-05-30 10:45:15.128872098 -0400
+@@ -50,7 +50,7 @@
+ if(${CMAKE_CXX_COMPILER_ID} STREQUAL "Clang")
+   set(_tbb_min_version 2019.7)
+ else()
+-  set(_tbb_min_version 2018.6)
++  set(_tbb_min_version 2018.0)
+ endif()
+ 
+ set(TBB_MIN_VERSION ${_tbb_min_version} CACHE STRING "Minimum version of TBB (assumes a dotted-decimal format: YYYY.XX)")
